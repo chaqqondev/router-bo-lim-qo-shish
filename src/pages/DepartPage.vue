@@ -22,11 +22,12 @@
         <tbody>
             <tr v-for="(d,i) of departs" :key="i">
                 <td>{{i + 1}}</td>
+
                 <td>{{d.name}}</td>
+                
                 <td class="del">
                     <button 
-                        @click="del(d.id)">
-                        X
+                        @click="del(d.id)">X
                     </button>
                 </td>
             </tr>
